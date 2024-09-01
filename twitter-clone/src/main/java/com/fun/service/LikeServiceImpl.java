@@ -3,6 +3,7 @@ package com.fun.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.fun.exception.TweetException;
 import com.fun.exception.UserException;
@@ -12,6 +13,7 @@ import com.fun.model.User;
 import com.fun.repository.LikeRepository;
 import com.fun.repository.TweetRepository;
 
+@Service
 public class LikeServiceImpl implements LikeService{
     @Autowired
 	private LikeRepository likeRepository;

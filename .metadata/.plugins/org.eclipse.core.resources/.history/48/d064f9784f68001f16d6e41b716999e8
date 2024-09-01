@@ -1,0 +1,5 @@
+package com.fun.dto;
+
+public class TweetDto {
+
+}

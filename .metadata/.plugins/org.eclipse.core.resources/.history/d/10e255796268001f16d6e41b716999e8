@@ -1,0 +1,9 @@
+package com.fun.util;
+
+import com.fun.model.User;
+
+public class UserUtil {
+   public static final boolean isReqUser(User reqUser, User User2) {
+	   return reqUser.getId().equals(User2.getId());
+   }
+}
