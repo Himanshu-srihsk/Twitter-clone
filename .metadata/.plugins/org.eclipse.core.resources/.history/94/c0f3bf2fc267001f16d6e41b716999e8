@@ -1,7 +1,0 @@
-package com.fun.model;
-import lombok.*;
-
-@Entity
-public class User {
-
-}

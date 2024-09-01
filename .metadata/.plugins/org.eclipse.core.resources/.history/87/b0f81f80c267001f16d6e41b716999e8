@@ -1,8 +1,0 @@
-package com.fun.model;
-import jakarta.persistence.Entity;
-import lombok.*;
-
-@Entity
-public class User {
-
-}

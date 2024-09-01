@@ -1,9 +1,0 @@
-package com.fun.repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.fun.model.User;
-
-public interface LikeRepository extends JpaRepository<User, Long> {
-
-}

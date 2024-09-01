@@ -1,9 +1,0 @@
-package com.fun.service;
-
-import com.fun.exception.TweetException;
-import com.fun.exception.UserException;
-import com.fun.model.Like;
-
-public interface LikeService {
-  public Like likeTweet(Long tweetId, User user) throws UserException, TweetException
-}

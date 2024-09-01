@@ -1,5 +1,0 @@
-package com.fun.request;
-
-public class TweetReplyRequest {
-
-}
