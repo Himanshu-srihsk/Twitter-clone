@@ -1,0 +1,17 @@
+package com.fun.model;
+
+import java.time.LocalDateTime;
+
+import org.springframework.cglib.core.Local;
+
+import jakarta.persistence.Entity;
+import lombok.Data;
+
+@Data
+public class Verification {
+   private boolean status=false;
+   private LocalDateTime startedAt;
+   private LocalDateTime endsAt;
+   private String planType;
+   
+}

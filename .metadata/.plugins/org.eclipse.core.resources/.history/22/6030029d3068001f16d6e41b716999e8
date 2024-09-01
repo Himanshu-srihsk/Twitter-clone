@@ -1,0 +1,9 @@
+package com.fun.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.fun.model.Like;
+
+public interface LikeRepository extends JpaRepository<Like, Long> {
+ 
+}

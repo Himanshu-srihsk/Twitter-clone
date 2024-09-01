@@ -1,0 +1,6 @@
+package com.fun.model;
+
+@Entity
+public class User {
+
+}

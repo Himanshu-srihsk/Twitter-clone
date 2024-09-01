@@ -1,0 +1,10 @@
+package com.fun.exception;
+
+public class TweetExecption extends Exception{
+
+	public TweetExecption(String message) {
+		super(message);
+	}
+
+ 
+}

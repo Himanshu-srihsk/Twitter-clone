@@ -1,0 +1,47 @@
+package com.fun.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.fun.exception.UserException;
+import com.fun.model.User;
+import com.fun.repository.UserRepository;
+
+@Service
+public class UserServiceImpl implements UserService{
+    @Autowired
+	private UserRepository userRepository;
+	
+	@Override
+	public User findUserById(Long userId) throws UserException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User findUserProfileByJwt(String jwt) throws UserException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User updateUser(Long userId, User user) throws UserException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User followUser(Long userId, User user) throws UserException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<User> searchUser(String query) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

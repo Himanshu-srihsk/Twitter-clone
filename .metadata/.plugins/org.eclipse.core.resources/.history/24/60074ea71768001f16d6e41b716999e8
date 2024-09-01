@@ -1,0 +1,8 @@
+package com.fun.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class CustomUserDetailsServiceImpl {
+  
+}

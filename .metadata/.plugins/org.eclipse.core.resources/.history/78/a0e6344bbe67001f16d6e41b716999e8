@@ -1,0 +1,5 @@
+package com.fun.config;
+
+public class JwtConstant {
+
+}
