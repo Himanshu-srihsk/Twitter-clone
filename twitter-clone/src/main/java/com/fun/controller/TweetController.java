@@ -54,7 +54,7 @@ public class TweetController {
 		
 	}
 	
-	@PutMapping("/{tweetid}/retweet")
+	@PutMapping("/{tweetId}/retweet")
 	public ResponseEntity<TweetDto> retweet(@PathVariable Long tweetId,
 			@RequestHeader("Authorization") String jwt) throws UserException, TweetException{
 		User user = userService.findUserProfileByJwt(jwt);
@@ -64,7 +64,7 @@ public class TweetController {
 		
 	}
 	
-	@GetMapping("/{tweetid}")
+	@GetMapping("/{tweetId}")
 	public ResponseEntity<TweetDto> findTweetById(@PathVariable Long tweetId,
 			@RequestHeader("Authorization") String jwt) throws UserException, TweetException{
 		User user = userService.findUserProfileByJwt(jwt);
@@ -99,7 +99,8 @@ public class TweetController {
 	@GetMapping("/user/{userId}")
 	public ResponseEntity<List<TweetDto>> getUsersAllTweets(@PathVariable Long userId,
 			@RequestHeader("Authorization") String jwt) throws UserException, TweetException{
-		User user = userService.findUserProfileByJwt(jwt);
+		//User user = userService.findUserProfileByJwt(jwt);
+		User user = userService.findUserById(userId);
 		List<Tweet> tweets = tweetService.getUserTweet(user);
 		List<TweetDto> tweetDtos = TweetDtoMapper.toTweetDtos(tweets, user);
 		return new ResponseEntity<>(tweetDtos, HttpStatus.OK);
